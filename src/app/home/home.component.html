@@ -1,7 +1,8 @@
 
+<div class="pic"></div>
 
-
-<div class="card" style="width: 18rem;" *ngFor="let hotel of hotelArr">
+<div class="cards">
+  <div class="card" style="width: 18rem;" *ngFor="let hotel of hotelArr">
     <img [src]="hotel.featuredImage" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">{{hotel.name}}</h5>
@@ -9,5 +10,9 @@
       <a routerLink="/detail/{{hotel.id}}" class="btn btn-primary">See More</a>
     </div>
   </div>
+</div>
+
+
+<img src="images/c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png" alt="">
 
 

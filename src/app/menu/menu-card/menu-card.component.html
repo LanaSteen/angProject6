@@ -1,0 +1,14 @@
+<p>menu-card works!</p>
+
+
+
+ <!-- <div class="card" style="width: 18rem;" *ngFor="let product of menu"> -->
+    <img [src]="singleProduct?.image" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{singleProduct?.name}}</h5>
+      <p class="card-text">{{singleProduct?.price}}</p>
+       <p class="card-text">{{singleProduct?.nuts == true ? "with nuts" : "without nuts"}}</p>
+     
+    </div>
+  <!-- </div> -->
+     
