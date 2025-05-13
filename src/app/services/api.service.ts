@@ -17,5 +17,11 @@ export class ApiService {
 
   }
 
+  book(obj : any){
+
+        return this.http.post('https://hotelbooking.stepprojects.ge/api/Booking', obj)
+
+  }
+
 
 }

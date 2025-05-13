@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { Hotel } from '../models/hotel';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-detail',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './detail.component.html',
   styleUrl: './detail.component.scss'
 })
@@ -25,4 +26,17 @@ export class DetailComponent {
       this.singleHotel = resp
     })
   }
+
+
+
+  // "roomID": 0,
+  // "checkInDate": "2025-05-13T15:45:59.796Z",
+  // "checkOutDate": "2025-05-13T15:45:59.796Z",
+  // "totalPrice": 0,
+  // "isConfirmed": true,
+  // "customerName": "string",
+  // "customerId": "string",
+  // "customerPhone": "string"
+
+
 }

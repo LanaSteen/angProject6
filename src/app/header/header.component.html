@@ -6,7 +6,17 @@
         <li><a routerLink="/about">About</a></li>
         <li><a routerLink="/menu">Menu</a></li>
 
-        <app-button [text]="buttonText" [width]="'200px'"></app-button>
+        <li><a (click)="scrollToFooret()"> Contact</a></li>
+
+        <app-button 
+        [text]="buttonText" [width]="'200px'" 
+
+        (sendToParent)="rameFuction($event)"
+
+        ></app-button>
+        <button (click)="dleetteToken()">Log OOut</button>
+
+        <p>Welcome {{textFromChild}}</p>
 
     </ul>
 </nav>

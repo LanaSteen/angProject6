@@ -8,5 +8,25 @@
       <h5 class="card-title">{{singleHotel.name}}</h5>
       <p class="card-text">{{singleHotel.address}}</p>
       <a routerLink="/home" class="btn btn-primary">Go Home</a>
+
+  
+    </div>
+  </div>
+
+
+
+  <div class="card" style="width: 18rem;" *ngFor="let room of singleHotel.rooms">
+    <img [src]="room.images[0].source" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{room.name}}</h5>
+      <p class="card-text">{{room.pricePerNight}}</p>
+      <a routerLink="/booking/{{room.id}}">Book Room</a>
+  <!-- hotelId
+: 
+1
+id
+:  -->
+<!-- 1 -->
+ 
     </div>
   </div>

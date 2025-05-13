@@ -1,0 +1,20 @@
+
+
+
+
+    <!-- // "roomID": 0,
+  // "checkInDate": "2025-05-13T15:45:59.796Z",
+  // "checkOutDate": "2025-05-13T15:45:59.796Z",
+  // "totalPrice": 0,
+  // "isConfirmed": true,
+  // "customerName": "string",
+  // "customerId": "string",
+  // "customerPhone": "string" -->
+
+
+  <input type="date" [(ngModel)]="checkInDate" >
+    <input type="date" [(ngModel)]="checkOutDate" >
+    <input type="text" [(ngModel)]="customerName">
+        <input type="text" [(ngModel)]="customerId">
+                <input type="text" [(ngModel)]="customerPhone">
+                <button (click)="bookRoom()">Book</button>

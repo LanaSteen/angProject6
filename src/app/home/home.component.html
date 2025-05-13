@@ -2,17 +2,21 @@
 <div class="pic"></div>
 
 <div class="cards">
-  <div class="card" style="width: 18rem;" *ngFor="let hotel of hotelArr">
-    <img [src]="hotel.featuredImage" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{hotel.name}}</h5>
-      <p class="card-text">{{hotel.address}}</p>
-      <a routerLink="/detail/{{hotel.id}}" class="btn btn-primary">See More</a>
-    </div>
-  </div>
+
+  <app-card *ngFor="let hotelFromParent of hotelArr" 
+    [hotel]="hotelFromParent"
+    [tok]="token"
+    ></app-card>
+
 </div>
 
+<app-button [text]="'rame'"></app-button>
 
-<img src="images/c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png" alt="">
+
+
+
+
+
+<!-- <img src="images/c837a6_aa7c239e685b4a9989f2ab7fbbeb106b~mv2.png" alt=""> -->
 
 
